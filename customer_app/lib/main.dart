@@ -49,74 +49,90 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
               // banner with image
-              Row(
-                children: [
-                  Container(
-                    child: Column(
+              Container(
+                child: Column(
+                  children: [
+                    Text(
+                      "Komplex Cafe"
+                    ),
+                    Text(
+                      "...Where every cup tells a story."
+                    )
+                  ],
+                )
+              ),
+
+              // aboout info + browse menu button
+              Container(
+                padding: EdgeInsets.all(45.0),
+                child: Column(
+                  children: [
+                    Text(
+                      "Located in the heart of Sampaloc, Manila near UST, we blend studying and coffee️ to inspire your creativity. Join us for a unique experience that goes beyond the ordinary.",
+                      textAlign: TextAlign.justify,
+                    ),
+
+                    SizedBox(height: 16.0),
+
+                    ElevatedButton(
+                      onPressed: null,
+                      child: 
+                        Text("Browse Menu", style: TextStyle(fontWeight: FontWeight.bold),),
+                    )
+                  ],
+                )
+              ),
+                
+              // img with text  
+              Container(
+                padding: EdgeInsets.all(45.0),
+                child: Column(
+                  children: [
+                    Row(
                       children: [
+                        //img go here
                         Text(
-                          "Komplex Cafe"
-                        ),
-                        Text(
-                          "...Where every cup tells a story."
+                          "Here at Komplex Cafe, you can focus on your work while enjoying freshly brewed coffee. We also offer fruit tea, pasta, and pastries.",
+                          textAlign: TextAlign.right,
                         )
                       ],
                     )
-                  ),
-                ],
+                  ],
+                )
               ),
 
-              // short about info + link to menu
-              Row(
-                children: [
-                  Container(
-
-
-                  ),
-                ],
+              // list of opening hours
+              Container(
+                child: Column(
+                  children: [
+                    Text(
+                      "We're open on: ",
+                      style: TextStyle(fontWeight: FontWeight.bold)
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          children: [
+                            Text("Weekdays:",style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text("Saturdays:",style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text("Sundays:",style: TextStyle(fontWeight: FontWeight.bold)),
+                          ]
+                        ),
+                        Column(
+                          children: [
+                            Text("10:00 AM - 2:00 AM"),
+                            Text("10:00 AM - 12:00 AM"),
+                            Text("12:00 PM - 10:00 PM"),
+                          ]
+                        )
+                      ],
+                    )
+                  ],
+                )
               ),
 
-              // more info
-              Row(
-                children: [
-                  Container(
-
-
-                  ),
-                ],
-              ),
-
-              // opening hours
-              Row(
-                children: [
-                  Container(
-
-
-                  ),
-                ],
-              ),
-
-              // link to contacts
-              Row(
-                children: [
-                  Container(
-
-
-                  ),
-                ],
-              ),
-
-              // location info
-              Row(
-                children: [
-                  Container(
-
-
-                  ),
-                ],
-              ),
 
           ],
         ),
